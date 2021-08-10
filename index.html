@@ -49,37 +49,52 @@
             <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button type="button" class="close" data-modal-close></button>
+                    <button type="button" class="close" data-modal-close>
+                        <svg class="modal-close" width="30px" height="30px">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
                     <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                         <form action="" class="modal-form">
                             <div class="modal-wrapper">
-                                <label for="" class="modal-label"></label>
-                                <input type="text" class="modal-input">
-                                <svg class="modal-item" width="18px" height="18px"> <use href="./images/icons.svg#icon-person" ></use>
+                                <label for="" class="modal-label">
+                                <input type="text" class="modal-input" name="name">
+                                <svg class="modal-item" width="18px" height="18px"> <use href="./images/icons.svg#icon-person" ></use></svg>
                                 <span class="modal-text">Имя</span>
                             </label>
                             </div>
                             <div class="modal-wrapper">
                                     <label for="" class="modal-label">
-                                    <input type="text" class="modal-input">
+                                    <input type="text" class="modal-input" name="tel">
                                     <svg class="modal-item" width="18px" height="18px"> <use href="./images/icons.svg#icon-phone" ></use>
                                     <span class="modal-text">Телефон</span>
                                 </label>
                                 </div>
                             <div class="modal-wrapper">
                                     <label for="" class="modal-label">
-                                    <input type="text" class="modal-input">
-                                    <svg class="modal-item" width="18px" height="18px"> <use href="./images/icons.svg#icon-email" ></use>
+                                    <input type="text" class="modal-input" name="email">
+                                    <svg class="modal-item" width="18px" height="18px"> <use href="./images/icons.svg#icon-email" ></use></svg>
                                     <span class="modal-text">E-mail</span>
                                 </label>
                                 </div>
                             <div class="modal-wrapper">
                                     <label for="" class="modal-label">
-                                    <input type="text" class="modal-input">
-                                   
+                                    <!-- <input type="text" class="modal-input" name="comment" placeholder="Введите текст"> -->
+                                   <textarea name="" id=""  rows="5" class="modal-input modal-policy" placeholder="Введите текст"></textarea>
                                     <span class="modal-text">Комментарий</span>
                                 </label>
                                 </div>
+                                <div class="modal-wrapper">
+                                <input type="checkbox" class="modal-checkbox visually-hidden " name="checkbox" id="checkbox">
+                                <label for="checkbox" class="checkbox-label modal-policy">
+                                    <!-- <svg class="modal-icon" width="15px" height="15px">
+                                        <use href="./images/icons.svg#icon-icon-check"></use>
+                                    </svg> -->
+                                   Соглашаюсь с рассылкой и принимаю  
+                                   <a href=" "> Условия договора</a>
+                                    </label>
+                                </div>
+                                <button type="button" class="button primary" >Отправить</button>
                                 
                             </form>
                     
